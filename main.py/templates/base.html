@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azoblash Xizmati 24/7</title>
+    <!-- Tailwind CSS -->
+    <script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
+    <!-- Lucide Icons -->
+    <script src="[https://unpkg.com/lucide@latest](https://unpkg.com/lucide@latest)"></script>
+</head>
+<body class="min-h-screen bg-neutral-950 text-neutral-100 font-sans flex flex-col">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-neutral-950/80 backdrop-blur-md border-b border-neutral-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-2 group">
+                    <i data-lucide="skull" class="text-red-600 group-hover:animate-bounce"></i>
+                    <span class="font-bold text-xl tracking-tight hidden sm:block">
+                        Azoblash <span class="text-red-600">24/7</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="font-medium text-neutral-300 hover:text-red-500 transition-colors">Asosiy</a>
+                    <a href="about.html" class="font-medium text-neutral-300 hover:text-red-500 transition-colors">Biz haqimizda</a>
+                    <a href="contact.html" class="font-medium text-neutral-300 hover:text-red-500 transition-colors">Aloqa</a>
+                </nav>
+
+                <!-- Auth Buttons -->
+                <div class="hidden md:flex items-center gap-4">
+                    <a href="login.html" class="text-neutral-300 hover:text-white font-medium">Kirish</a>
+                    <a href="register.html" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md font-medium transition-colors">Ro'yxatdan o'tish</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ASOSIY KONTENT SHU YERGA TUSHADI -->
+    <main class="flex-grow">
+        <!-- Boshqa fayllarning asosiy qismi odatda shu joyda bo'ladi -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-neutral-800 bg-neutral-950 mt-12 py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="flex items-center justify-center gap-2 mb-4">
+                <i data-lucide="skull" class="text-red-600"></i>
+                <span class="font-bold text-xl">Azoblash 24/7</span>
+            </div>
+            <p class="text-neutral-500 text-sm">
+                Sizning asablaringiz bizning daromadimiz. Bizni tanlaganingiz uchun afsuslanasiz!
+            </p>
+            <p class="text-neutral-600 text-sm mt-4">&copy; 2024 Azoblash xizmati 24/7.</p>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

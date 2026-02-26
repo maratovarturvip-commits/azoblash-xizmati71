@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloqa - Azoblash Xizmati 24/7</title>
+    <script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
+    <script src="[https://unpkg.com/lucide@latest](https://unpkg.com/lucide@latest)"></script>
+</head>
+<body class="min-h-screen bg-neutral-950 text-neutral-100 font-sans flex flex-col">
+
+    <header class="sticky top-0 z-50 bg-neutral-950/80 backdrop-blur-md border-b border-neutral-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-2 group">
+                    <i data-lucide="skull" class="text-red-600"></i>
+                    <span class="font-bold text-xl hidden sm:block">Azoblash <span class="text-red-600">24/7</span></span>
+                </a>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="font-medium text-neutral-300 hover:text-red-500">Asosiy</a>
+                    <a href="about.html" class="font-medium text-neutral-300 hover:text-red-500">Biz haqimizda</a>
+                    <a href="contact.html" class="font-medium text-red-500 border-b-2 border-red-500 pb-1">Aloqa</a>
+                </nav>
+                <div class="hidden md:flex items-center gap-4">
+                    <a href="login.html" class="text-neutral-300 hover:text-white font-medium">Kirish</a>
+                    <a href="register.html" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md font-medium">Ro'yxatdan o'tish</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-6xl mx-auto px-4 py-12 w-full">
+        <h1 class="text-4xl font-bold mb-12 text-center">Bizga Shikoyat Qiling (Baribir o'qimaymiz)</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="space-y-8">
+                <div class="flex items-start gap-4">
+                    <div class="bg-red-900/30 p-3 rounded-lg"><i data-lucide="map-pin" class="text-red-500"></i></div>
+                    <div>
+                        <h3 class="font-bold text-lg">Manzil</h3>
+                        <p class="text-neutral-400">Hech qachon topa olmaysiz ko'chasi, 404-uy.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="bg-red-900/30 p-3 rounded-lg"><i data-lucide="phone" class="text-red-500"></i></div>
+                    <div>
+                        <h3 class="font-bold text-lg">Telefon</h3>
+                        <p class="text-neutral-400">+998 00 000-00-00 (Faqat band signalini eshitasiz)</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="bg-red-900/30 p-3 rounded-lg"><i data-lucide="mail" class="text-red-500"></i></div>
+                    <div>
+                        <h3 class="font-bold text-lg">Email</h3>
+                        <p class="text-neutral-400">spam@azoblash247.uz</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-neutral-800 p-8 rounded-xl">
+                <form class="space-y-4" onsubmit="event.preventDefault(); alert('Xato! Xabar yuborishning iloji yo\'q.');">
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Ismingiz</label>
+                        <input type="text" class="w-full bg-neutral-900 border border-neutral-700 rounded p-3 text-white focus:border-red-500" placeholder="Ismingiz" />
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Xabaringiz</label>
+                        <textarea rows="4" class="w-full bg-neutral-900 border border-neutral-700 rounded p-3 text-white focus:border-red-500" placeholder="Baribir o'qimaymiz..."></textarea>
+                    </div>
+                    <button class="w-full bg-red-600 hover:bg-red-700 py-3 rounded font-bold">Yuborish</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t border-neutral-800 bg-neutral-950 py-8">
+        <div class="text-center"><p class="text-neutral-600 text-sm">&copy; 2024 Azoblash xizmati 24/7.</p></div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

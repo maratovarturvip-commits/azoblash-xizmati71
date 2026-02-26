@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ro'yxatdan o'tish - Azoblash Xizmati</title>
+    <script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
+    <script src="[https://unpkg.com/lucide@latest](https://unpkg.com/lucide@latest)"></script>
+</head>
+<body class="min-h-screen bg-neutral-950 text-neutral-100 font-sans flex flex-col">
+
+    <header class="sticky top-0 z-50 bg-neutral-950/80 backdrop-blur-md border-b border-neutral-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-2 group">
+                    <i data-lucide="skull" class="text-red-600"></i>
+                    <span class="font-bold text-xl hidden sm:block">Azoblash <span class="text-red-600">24/7</span></span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center py-12 px-4">
+        <div class="max-w-lg w-full bg-neutral-800 p-8 rounded-2xl border border-neutral-700 shadow-2xl">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold">Qurbon bo'lish</h2>
+                <p class="text-neutral-400 mt-2">Shartnomani o'qimay rozi bo'lish uchun to'ldiring</p>
+            </div>
+            
+            <form class="space-y-4" action="index.html">
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Ism</label>
+                        <input type="text" class="w-full bg-neutral-900 border border-neutral-700 rounded p-3 focus:border-red-500" required />
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Familiya</label>
+                        <input type="text" class="w-full bg-neutral-900 border border-neutral-700 rounded p-3 focus:border-red-500" required />
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-1">Email</label>
+                    <input type="email" class="w-full bg-neutral-900 border border-neutral-700 rounded p-3 focus:border-red-500" required />
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-1">Parol (Eslab qolish imkonsiz bo'lgan)</label>
+                    <input type="password" class="w-full bg-neutral-900 border border-neutral-700 rounded p-3 focus:border-red-500" required />
+                </div>
+                
+                <div class="flex items-start gap-2 mt-4">
+                    <input type="checkbox" class="mt-1 accent-red-600" required />
+                    <span class="text-sm text-neutral-400">
+                        Men barcha muammolarga rozi ekanligimni tasdiqlayman.
+                    </span>
+                </div>
+
+                <button type="submit" class="w-full bg-red-600 hover:bg-red-700 py-3 rounded font-bold transition-colors mt-6">
+                    Meni qurbonlar safiga qo'shish
+                </button>
+            </form>
+            
+            <p class="text-center mt-6 text-neutral-400 text-sm">
+                Sizda allaqachon muammolar yetarlimi? <a href="login.html" class="text-red-500 hover:underline">Kirish</a>
+            </p>
+        </div>
+    </main>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
